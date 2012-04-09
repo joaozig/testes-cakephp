@@ -30,6 +30,17 @@
  * ...and connect the rest of 'Pages' controller's urls.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+	Router::connect('/apresentacao', array('controller' => 'default', 'action' => 'apresentacao'));
+	Router::connect('/contato', array('controller' => 'default', 'action' => 'contato'));
+
+/**
+ * Gambi para as urls dos controllers do plugin funcionar como se fossem controllers da app :D
+ * esse if existe pois evita MissingPluginException caso acesse uma url do plugin (ex.: /blog/teste) sem o mesmo estar carregado.
+ */
+	if(CakePlugin::loaded('Blog')){
+		Router::connect('/blog/:action', array('plugin' => 'Blog', 'controller' => 'blog'));
+		Router::connect('/admin/blog/:action', array('plugin' => 'Blog', 'controller' => 'blog', 'prefix' => 'admin'));
+	}
 
 /**
  * Load all plugin routes.  See the CakePlugin documentation on 
