@@ -22,4 +22,10 @@ class Post extends AppModel {
 			),
 		),
 	);
+	
+	public function publicado(){
+		$conditions = array('conditions' => array('publicado' => true));
+		$results = $this->find('all',$conditions);
+		return $results;
+	}
 }
