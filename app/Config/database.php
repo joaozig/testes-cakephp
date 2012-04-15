@@ -7,7 +7,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'cakephp',
+		'database' => 'testes_cakephp',
 	);
 	public $test = array(
 		'datasource' => 'Database/Mysql',
@@ -15,6 +15,6 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'cakephp_test',
+		'database' => 'testes_cakephp_test',
 	);
 }
