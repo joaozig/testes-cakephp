@@ -1,1 +1,1 @@
-<img src="http://www.prosperaweb.com.br/blog/wp-content/uploads/2010/09/google-maps.gif" />
+<img src="http://www.zerobulletin.com/wp-content/uploads/2011/06/map-google.gif" />
